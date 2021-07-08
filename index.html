@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Formulário de Contato</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="Praticando Formulário,Formulário de contato,Formulário HTML5 E CSS3, Formulário responsivo"/>
+        <meta name="author" content="Júnior Vidal"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Formulário de Contato</legend>
+                <input type="text" name="nome" placeholder="Nome do usuário" required/>
+                <input type="text" name="email" placeholder="E-mail do usuário" required/>
+                <select name="list">
+                    <option disabled selected>Em qual estado você mora?</option>
+                    <option value="CE">Ceará</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SC">Santa Catarina</option>
+                </select>
+                <h3>Qual o seu gênero?</h3>
+                <div class="box-form">
+                    <input type="radio" name="gender" value="Masculino"><span>Masculino</span>
+                    <input type="radio" name="gender" value="Feminino"><span>Feminino</span>  
+                </div>
+                <textarea placeholder="Digite sua mensagem"></textarea>
+                <div class="box-form">
+                    <label for="file">Selecione sua foto de perfil</label>
+                    <input  id="file" type="file" name="file"/>
+                </div>
+                <div class="box-form">
+                    <input type="checkbox" name="accepted" value="Accepted" required><span>Li e concordo  com os termos</span>         
+                </div>
+                <input type="submit" name="action" value="Enviar"/>
+            </fieldset>
+        </form>
+    </body>
+</html> 
