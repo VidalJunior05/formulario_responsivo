@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    height:100%;
+    background-color:#63e6c0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+form{
+    width:90%;
+    max-width:600px;
+    margin:auto auto;
+    color:#000; 
+    padding:70px 0;
+}
+form fieldset{
+    border:3px solid #dcdedd;
+    padding:10px 40px;   
+}
+form legend {
+    text-align:center;
+    font-size:20px;
+    font-weight: bold;
+    padding:5px 15px; 
+}
+input[type="text"], form select, textarea{
+    display:block;
+    margin:20px auto;
+    width:60%;
+    padding:10px 15px;
+    border-radius:5px;
+    font-size:13px;
+    border:0;
+}
+input[type="text"]:focus{
+    background-color:#dcdedd;
+    outline:0;
+}
+form select:focus, textarea:focus{
+   outline:0;
+}
+form select option:nth-of-type(2){
+   font-weight:600; 
+}
+h3{
+    text-align:center;
+    font-weight:600;
+    font-size:16px;
+    margin-bottom:20px;
+}
+.box-form{
+    text-align: center;
+    margin:20px auto;
+}
+.box-form span{
+    margin:0 5px;
+    font-size:16px;
+}
+form input[type="submit"]{
+    display:block;
+    margin:20px auto;
+    width:18%;
+    padding:10px 15px;
+    border-radius:5px;
+    font-size:13px;
+    font-weight:600;
+    border:0;
+    background-color:#c5c9c7;
+    cursor:pointer;
+}
+textarea{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 10vh;
+    resize:none;
+}
+@media only screen and (max-width: 768px) {
+    input[type="file"]{
+        width:60%;
+    }
+}
